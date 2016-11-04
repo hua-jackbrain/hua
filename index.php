@@ -5,6 +5,6 @@
 	<title>index</title>
 </head>
 <body>
-	Welcom Home!
+	Hello World!
 </body>
 </html>
