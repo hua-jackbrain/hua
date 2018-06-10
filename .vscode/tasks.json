@@ -1,0 +1,84 @@
+{
+    "version": "2.0.0",
+    "command": "cmd",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+    },
+    "tasks": [
+        {
+            "label": "python",
+            "command": "python",
+            "args": [
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "python3",
+            "command": "python3",
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Node",
+            "command": "node",
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "C++ Shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "cmd",
+                "/c",
+                "g++ ${fileBasename} -o ${fileBasenameNoExtension}.exe && ${fileBasenameNoExtension}.exe &pause"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "C++",
+            "type": "shell",
+            "command": "g++ ${fileBasename} -o ${fileBasenameNoExtension}.exe && ${fileBasenameNoExtension}.exe",
+            "problemMatcher": []
+        },
+        {
+            "label": "Java Shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "cmd",
+                "/c",
+                "javac -encoding utf-8 ${fileBasename} && java ${fileBasenameNoExtension} &pause"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Java",
+            "type": "shell",
+            "command": "javac -encoding utf-8 ${fileBasename} && java ${fileBasenameNoExtension}",
+            "problemMatcher": []
+        },
+        {
+            "label": "PHP",
+            "command": "php",
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
